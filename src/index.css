@@ -44,6 +44,8 @@ body {
   background:var(--color6);
   border-radius:5px;
   text-align:center;
+  font-weight:bold;
+  color:#c2d8e7;
 }
 
 .button{
