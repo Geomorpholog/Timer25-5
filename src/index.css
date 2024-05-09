@@ -18,7 +18,7 @@
 }
 
 body {
-  font-family: "Open Sans";
+  font-family: "Raleway";
 }
 
 .app{
@@ -26,7 +26,7 @@ body {
   height:50%;
   background:var(--color4);
   border-radius:1rem;
-  padding:3rem;
+  padding:25px;
   display:grid;
   grid-template-columns: repeat(2,1fr);
   grid-template-rows:repeat(3,1fr);
@@ -44,14 +44,25 @@ body {
   background:var(--color6);
   border-radius:5px;
   text-align:center;
-  font-weight:bold;
+  padding:5px;
   color:#c2d8e7;
 }
-
-.button{
-  background-color: transparent;
-  width:2rem;
-  height:2rem;
+    .elements div {
+        font-family: 'Jersey 10', system-ui;
+        color: white;
+        font-size: 2.5rem;
+        display: inline;
+        color: #c2d8e7;
+        margin: 0 10px;
+    }
+.button {
+    background-color: transparent;
+    width: 2rem;
+    height: 2rem;
+    display: inline;
+    border-style: none;
+    border: solid 3px #c2d8e7;
+    border-radius: 5px;
 }
 
 .button img{
