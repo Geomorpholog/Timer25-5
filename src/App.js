@@ -10,16 +10,17 @@ function App(){
 return(
   
     <div className="background">
-      <div className="app">
-        <div>
+        <div className="app">
+          <div class='header'>25+5 Clock</div>
+        
                 <Elements value={breaking} name="break"
                     methodup={(() => setBreaking(breaking = 5))}
                     methoddown={(() => setBreaking(breaking = -5))}
                     dirUp="up"
                     dirDown="down"
                 />
-        </div>
-        <div>
+        
+        
                 <Elements value={session} name="session"
                     methodup={(() => setSession(session = 50))}
                     methoddown={(() => setSession(session = -50))}
@@ -27,7 +28,7 @@ return(
                     dirDown="down"
                 />
           
-        </div>
+        
         
       </div>
     </div>
