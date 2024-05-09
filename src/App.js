@@ -1,7 +1,6 @@
 import {useState} from 'react';
 import './index.css';
 import Elements from './Elements';
-import Button from './Button.js'
 import "@fontsource/raleway";
 import '@fontsource/jersey-10';
 function App(){
