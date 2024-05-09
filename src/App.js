@@ -1,15 +1,24 @@
 import {useState} from 'react';
 import './index.css';
 import Elements from './Elements';
+import Button from './Button.js'
 import "@fontsource/open-sans"
 function App(){
-    const [session,setSession] = useState('25:00');
-    const [breaking,setBreaking] = useState('05:00');
+    let [session,setSession] = useState('25:00');
+    let [breaking,setBreaking] = useState('05:00');
 return(
+  
     <div className="background">
       <div className="app">
-        <Elements value={breaking} name = "break"/>
-        <Elements value={session} name = "session"/>
+        <div>
+          <Elements value={breaking} name = "break"/>
+          <Button dir = {'up'} method={(()=>setBreaking(breaking = 5))}/>
+        </div>
+        <div>
+          <Elements value={session} name = "session"/>
+          <Button/>
+        </div>
+        
       </div>
     </div>
 )

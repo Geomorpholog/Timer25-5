@@ -53,3 +53,8 @@ body {
   width:2rem;
   height:2rem;
 }
+
+.button img{
+  width:100%;
+  height:100%;
+}
