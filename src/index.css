@@ -17,6 +17,10 @@
   align-items:center;
 }
 
+body {
+  font-family: "Open Sans";
+}
+
 .app{
   width:30%;
   height:50%;
@@ -39,9 +43,11 @@
 .elements{
   background:var(--color6);
   border-radius:5px;
-  display:flex;
-  flex-direction: column;
-  flex-wrap:wrap;
-  justify-content:center;
-  align-items:center;
+  text-align:center;
+}
+
+.button{
+  background-color: transparent;
+  width:2rem;
+  height:2rem;
 }
