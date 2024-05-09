@@ -8,8 +8,8 @@ function App(){
 return(
     <div className="background">
       <div className="app">
-        <Elements value={breaking} header="break"/>
-        <Elements value={session} header="session"/>
+        <Elements value={breaking} name = "break"/>
+        <Elements value={session} name = "session"/>
       </div>
     </div>
 )
