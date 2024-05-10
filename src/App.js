@@ -1,8 +1,11 @@
 import {useState} from 'react';
 import './index.css';
 import Elements from './Elements';
+<<<<<<< HEAD
 import Display from './Display.js';
 import Control from './Control.js';
+=======
+>>>>>>> 0ff6fbe93bcda92741f25fa925cba7544fdc51db
 import "@fontsource/raleway";
 import '@fontsource/jersey-10';
 function App(){
