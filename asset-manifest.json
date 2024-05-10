@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.acf70855.css",
+    "main.js": "/static/js/main.0a2c3d36.js",
+    "static/media/Down.png": "/static/media/Down.b1dac40eb4b3c457e807.png",
+    "static/media/UP.png": "/static/media/UP.ba73a504473570ccb9bb.png",
+    "static/media/raleway-latin-400-normal.woff": "/static/media/raleway-latin-400-normal.7274e8a7766c320ff67b.woff",
+    "static/media/raleway-latin-400-normal.woff2": "/static/media/raleway-latin-400-normal.bc8445f492c7fbf7a0bb.woff2",
+    "static/media/raleway-latin-ext-400-normal.woff2": "/static/media/raleway-latin-ext-400-normal.150303dc14f4d1e0c2c9.woff2",
+    "static/media/raleway-latin-ext-400-normal.woff": "/static/media/raleway-latin-ext-400-normal.56b5b154afe24082cb30.woff",
+    "static/media/jersey-10-latin-400-normal.woff2": "/static/media/jersey-10-latin-400-normal.4a02b85ac748157caec7.woff2",
+    "static/media/raleway-cyrillic-ext-400-normal.woff2": "/static/media/raleway-cyrillic-ext-400-normal.4482e08504d544757971.woff2",
+    "static/media/raleway-cyrillic-400-normal.woff2": "/static/media/raleway-cyrillic-400-normal.699b459f21e39ca4b8df.woff2",
+    "static/media/raleway-cyrillic-ext-400-normal.woff": "/static/media/raleway-cyrillic-ext-400-normal.5a5510fbec564ecd00ed.woff",
+    "static/media/raleway-cyrillic-400-normal.woff": "/static/media/raleway-cyrillic-400-normal.085b633264f5a36c2e35.woff",
+    "static/media/jersey-10-latin-ext-400-normal.woff2": "/static/media/jersey-10-latin-ext-400-normal.a285be486eb55f5b3ac6.woff2",
+    "static/media/jersey-10-latin-400-normal.woff": "/static/media/jersey-10-latin-400-normal.fec22f2549fee17a90fe.woff",
+    "static/media/jersey-10-latin-ext-400-normal.woff": "/static/media/jersey-10-latin-ext-400-normal.f7c48356b1009c32b92b.woff",
+    "static/media/raleway-vietnamese-400-normal.woff2": "/static/media/raleway-vietnamese-400-normal.5212361bfd059a27e2da.woff2",
+    "static/media/raleway-vietnamese-400-normal.woff": "/static/media/raleway-vietnamese-400-normal.b1a419d3ead111471ac7.woff",
+    "index.html": "/index.html",
+    "main.acf70855.css.map": "/static/css/main.acf70855.css.map",
+    "main.0a2c3d36.js.map": "/static/js/main.0a2c3d36.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.acf70855.css",
+    "static/js/main.0a2c3d36.js"
+  ]
+}
