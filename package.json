@@ -2,6 +2,7 @@
   "name": "timer",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://geomorpholog.github.io/Timer25-5/",
   "dependencies": {
     "@fontsource/jersey-10": "^5.0.2",
     "@fontsource/jersey-25-charted": "^5.0.1",
