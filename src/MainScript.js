@@ -1,3 +1,5 @@
+import './beep.mp3'
+
 export const time = (value, func) => (value > 60 ? func(1) : value < 0 ? func(60) : null);
 
 export const format = (val1, val2) => {
@@ -24,6 +26,7 @@ export function playCount(second, setSecond, status, setStatus, countdown, setCo
                 setCountdown(countdown = session)
                 setSecond(second = 0)
                 setInt(interval = "session");
+                document.getElementById("beep").play();
             } else if (second === 0) {
                 setCountdown(countdown -= 1)
                 setSecond(second = 59)
@@ -39,6 +42,7 @@ export function playCount(second, setSecond, status, setStatus, countdown, setCo
             setBreaking(breaking = 5);
             setSecond(second = 0)
             clearInterval(timer)
+            document.getElementById("beep").currentTime = 0;
         }
         function stop() {
             clearInterval(timer)
