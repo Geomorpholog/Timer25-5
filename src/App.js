@@ -1,40 +1,50 @@
 import {useState} from 'react';
 import './index.css';
 import Elements from './Elements';
-<<<<<<< HEAD
 import Display from './Display.js';
 import Control from './Control.js';
-=======
->>>>>>> 0ff6fbe93bcda92741f25fa925cba7544fdc51db
 import "@fontsource/raleway";
 import '@fontsource/jersey-10';
-function App(){
-    let [session,setSession] = useState('25:00');
-    let [breaking, setBreaking] = useState('05:00');
-    let [status, setStatus] = useState('session');
-return(
-  
+import {time,playCount } from './MainScript.js'
+function App() {
+
+
+    let [session, setSession] = useState(25);
+    let [breaking, setBreaking] = useState(5);
+    let [status, setStatus] = useState('set');
+    let [interval, setInterval] = useState('session');
+    let [second, setSecond] = useState(0);
+    let [countdown, setCountdown] = useState(25);
+    time(session, setSession);
+    time(breaking, setBreaking);
+    time(second, setSecond);
+    
+    return (
+        
     <div className="background">
         <div className="app">
                 <div id='header'>Timer 25+5 Clock</div>
-                <Elements value={breaking} name="break"
-                    methodup={(() => setBreaking(breaking = 5))}
-                    methoddown={(() => setBreaking(breaking = -5))}
+            <Elements value={breaking} name="break"
+                second={second}
+                    methodup={(() => setBreaking(breaking += 1))}
+                    methoddown={(() => setBreaking(breaking -= 1))}
                     dirUp="up"
                     dirDown="down"
                 />
-                <Elements value={session} name="session"
-                    methodup={(() => setSession(session = 50))}
-                    methoddown={(() => setSession(session = -50))}
+            <Elements value={session} name="session"
+                    second={second}
+                    methodup={(() => setSession(session += 1 ))}
+                    methoddown={(() => setSession(session -= 1))}
                     dirUp="up"
                     dirDown="down"
             />
-            <Display id="timer-lable" status={status} session="Session" break="Break" />
-            <Display id="time-left" status={status} session={session} break={breaking} />
-            <Control id="controlPanel"
+            <div id="timer-lable"></div>
+                <Display id="time-left" status={status} interval={interval} countdown={countdown} session={session} second={second} break={breaking} />
+                <Control id="controlPanel" status={status} interval={interval} countdown={countdown} session={session} second={second} break={breaking} 
                 dirPlay="play"
-                dirPause="pause"
-                dirReset = "reset"
+                    methodPlay={() => { playCount(second, setSecond, status, setStatus, countdown, setCountdown,session)}}              
+                    dirPause="pause"
+                    dirReset = "reset"
             />
       </div>
     </div>
