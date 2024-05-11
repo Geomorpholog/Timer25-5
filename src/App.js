@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import './beep.mp3'
 import './index.css';
 import Elements from './Elements';
 import Display from './Display.js';
