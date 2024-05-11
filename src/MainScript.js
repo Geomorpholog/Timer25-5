@@ -7,30 +7,51 @@ export const format = (val1, val2) => {
     return /:\d$/.test(secondFormat) === true ? secondFormat.replace(/:/, "$&0") : secondFormat;
 }     
 
-export function playCount(second, setSecond, status, setStatus,countdown,setCountdown,session) {
-    setStatus(status = "play ");
-    setCountdown(countdown = session)
-    
-   
-   
-    let timer = setInterval(() => {
-        if (second === 0 && countdown === 0) {
-            clearInterval(timer)
-            setCountdown(countdown = 0)
-            setSecond(second = 0)
-        } else if (second === 0) {
-            setCountdown(countdown -=1)
-            setSecond(second =59)
-        }
-        else (setSecond(second -= 1)
-        );
-       
-    }, 1000)
-    function stop() {
-        clearInterval(timer)
+export function playCount(second, setSecond, status, setStatus, countdown, setCountdown, session, interval, setInt, breaking, setSession, setBreaking) {
+        if (status === "set") {
+        setInt(interval = "session");
+        setCountdown(countdown = session)
     }
-        
-    document.getElementById("pause").addEventListener("click", stop);
-    
-} 
+    if (status === "set" || status == "pause") {
+        setStatus(status = "play");
+        let timer = setInterval(() => {
+            if (second === 0 && countdown === 0 && interval === "session") {
+                setCountdown(countdown = breaking)
+                setSecond(second = 0)
+                setInt(interval = "break");
+                document.getElementById("beep").play();
+            } else if (second === 0 && countdown === 0 && interval === "break") {
+                setCountdown(countdown = session)
+                setSecond(second = 0)
+                setInt(interval = "session");
+            } else if (second === 0) {
+                setCountdown(countdown -= 1)
+                setSecond(second = 59)
+            } else if (status !== "pause") {
+                setSecond(second -= 1)
+            }
 
+            console.log(status)
+        }, 1000)
+        function reset() {
+            setStatus(status = "set");
+            setSession(session = 25);
+            setBreaking(breaking = 5);
+            setSecond(second = 0)
+            clearInterval(timer)
+        }
+        function stop() {
+            clearInterval(timer)
+            setTimeout(()=>setStatus("pause"),200)
+            }
+        document.getElementById("start_stop").addEventListener("click", stop);
+        document.getElementById("reset").addEventListener("click", reset);
+    }
+
+    
+    
+    
+        
+  
+    
+}

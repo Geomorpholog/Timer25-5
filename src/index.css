@@ -26,7 +26,7 @@ body {
 
 .app{
   width:45%;
-  height:50%;
+  height:55%;
   background:var(--color4);
   border-radius:1rem;
   padding:2rem;
@@ -84,6 +84,14 @@ body {
     border: solid 0.5rem #c2d8e7;
     border-radius: 5px;
     padding:0.5rem;
+}
+
+#start_stop {
+    width: 8rem;
+    height: 4rem;
+}
+#start_stop img{
+    width:35%
 }
 
 .button img{
