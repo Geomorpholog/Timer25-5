@@ -7,7 +7,6 @@ import Audio from './Audio.js'
 import "@fontsource/raleway";
 import '@fontsource/jersey-10';
 import { time, playCount } from './MainScript.js'
-import 'https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'
 function App() {
 
 
