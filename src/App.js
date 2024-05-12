@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import './beep.mp3'
 import './index.css';
 import Elements from './Elements';
 import Display from './Display.js';
@@ -6,8 +7,7 @@ import Control from './Control.js';
 import Audio from './Audio.js'
 import "@fontsource/raleway";
 import '@fontsource/jersey-10';
-import { time, playCount } from './MainScript.js'
-import 'https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'
+import {time,playCount } from './MainScript.js'
 function App() {
 
 
@@ -24,7 +24,7 @@ function App() {
     return (
         
     <div className="background">
-            <div className="app">
+        <div className="app">
                 <div id='header'>Timer 25+5 Clock</div>
             <Elements value={breaking} name="break"
                 second={second}
