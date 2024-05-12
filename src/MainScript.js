@@ -42,7 +42,7 @@ export function playCount(second, setSecond, status, setStatus, countdown, setCo
             setBreaking(breaking = 5);
             setSecond(second = 0)
             clearInterval(timer)
-            document.getElementById("beep").currentTime = 0;
+            document.getElementById("beep").currentTime = 0.0;
         }
         function stop() {
             clearInterval(timer)
